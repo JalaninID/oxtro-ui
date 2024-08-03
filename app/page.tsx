@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <div className="w-full mt-44 flex justify-center items-center">
-        <h1 className="w-2/3 my-12 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/95 bg-clip-text text-center text-8xl font-semibold leading-tight text-transparent dark:from-white dark:to-slate-900/10">
+        <h1 className="w-2/3 my-12 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/95 bg-clip-text text-center text-5xl md:text-7xl xl:text-8xl font-semibold leading-tight text-transparent dark:from-white dark:to-slate-900/10">
           Oxtro: Solusi Bisnis Terintegrasi, Sederhana dan Andal.
         </h1>
       </div>

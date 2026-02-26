@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "generate": "bun run scripts/generate-index.ts"
+    "generate": "bun run scripts/generate-index.ts",
+    "test": "echo \"no tests for shadcn package\""
   },
   "svelte": "./src/index.ts",
   "exports": {

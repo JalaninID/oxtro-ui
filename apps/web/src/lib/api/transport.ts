@@ -2,7 +2,6 @@ import type { Interceptor, Transport } from "@connectrpc/connect";
 import { createConnectTransport } from "@connectrpc/connect-web";
 import { env } from "$env/dynamic/public";
 
-const DEFAULT_API_BASE_URL = "http://localhost:8080";
 
 type CreateApiTransportOptions = {
 	interceptors?: Interceptor[];
@@ -11,7 +10,7 @@ type CreateApiTransportOptions = {
 
 export function createApiTransport(options: CreateApiTransportOptions = {}): Transport {
 	return createConnectTransport({
-		baseUrl: env.PUBLIC_API_BASE_URL || DEFAULT_API_BASE_URL,
+		baseUrl: env.PUBLIC_API_BASE_URL ?? "",
 		interceptors: options.interceptors ?? [],
 		fetch: options.fetch,
 		useBinaryFormat: false,

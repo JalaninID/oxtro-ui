@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "generate:index": "bun run scripts/generate-index.mjs"
+    "generate:index": "bun run scripts/generate-index.mjs",
+    "test": "echo \"no tests for proto package\""
   },
   "exports": {
     ".": {

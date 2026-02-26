@@ -3,12 +3,123 @@
 /* eslint-disable */
 // @ts-nocheck
 
+import { AuthStatusResponse, ChangePasswordRequest, ForgotPasswordRequest, ForgotPasswordResponse, ListSessionsRequest, ListSessionsResponse, LoginRequest, LoginResponse, LogoutAllRequest, LogoutRequest, RefreshTokenRequest, RefreshTokenResponse, RegisterRequest, RegisterResponse, ResendEmailVerificationRequest, ResetPasswordRequest, RevokeSessionRequest, VerifyEmailRequest } from "./auth_pb";
+import { MethodKind } from "@bufbuild/protobuf";
+
 /**
  * @generated from service auth.v1.Auth
  */
 export const Auth = {
   typeName: "auth.v1.Auth",
   methods: {
+    /**
+     * @generated from rpc auth.v1.Auth.Register
+     */
+    register: {
+      name: "Register",
+      I: RegisterRequest,
+      O: RegisterResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.Login
+     */
+    login: {
+      name: "Login",
+      I: LoginRequest,
+      O: LoginResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.RefreshToken
+     */
+    refreshToken: {
+      name: "RefreshToken",
+      I: RefreshTokenRequest,
+      O: RefreshTokenResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.Logout
+     */
+    logout: {
+      name: "Logout",
+      I: LogoutRequest,
+      O: AuthStatusResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.LogoutAll
+     */
+    logoutAll: {
+      name: "LogoutAll",
+      I: LogoutAllRequest,
+      O: AuthStatusResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.ForgotPassword
+     */
+    forgotPassword: {
+      name: "ForgotPassword",
+      I: ForgotPasswordRequest,
+      O: ForgotPasswordResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.ResetPassword
+     */
+    resetPassword: {
+      name: "ResetPassword",
+      I: ResetPasswordRequest,
+      O: AuthStatusResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.ChangePassword
+     */
+    changePassword: {
+      name: "ChangePassword",
+      I: ChangePasswordRequest,
+      O: AuthStatusResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.VerifyEmail
+     */
+    verifyEmail: {
+      name: "VerifyEmail",
+      I: VerifyEmailRequest,
+      O: AuthStatusResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.ResendEmailVerification
+     */
+    resendEmailVerification: {
+      name: "ResendEmailVerification",
+      I: ResendEmailVerificationRequest,
+      O: AuthStatusResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.ListSessions
+     */
+    listSessions: {
+      name: "ListSessions",
+      I: ListSessionsRequest,
+      O: ListSessionsResponse,
+      kind: MethodKind.Unary,
+    },
+    /**
+     * @generated from rpc auth.v1.Auth.RevokeSession
+     */
+    revokeSession: {
+      name: "RevokeSession",
+      I: RevokeSessionRequest,
+      O: AuthStatusResponse,
+      kind: MethodKind.Unary,
+    },
   }
 } as const;
 

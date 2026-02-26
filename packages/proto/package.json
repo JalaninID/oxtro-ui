@@ -1,0 +1,46 @@
+{
+  "name": "@oxtro-ui/proto",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate:index": "bun run scripts/generate-index.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./gen/auth/v1/auth_pb": {
+      "types": "./src/gen/auth/v1/auth_pb.ts",
+      "default": "./src/gen/auth/v1/auth_pb.ts"
+    },
+    "./gen/auth/v1/auth_connect": {
+      "types": "./src/gen/auth/v1/auth_connect.ts",
+      "default": "./src/gen/auth/v1/auth_connect.ts"
+    },
+    "./gen/organization/v1/organization_pb": {
+      "types": "./src/gen/organization/v1/organization_pb.ts",
+      "default": "./src/gen/organization/v1/organization_pb.ts"
+    },
+    "./gen/organization/v1/organization_connect": {
+      "types": "./src/gen/organization/v1/organization_connect.ts",
+      "default": "./src/gen/organization/v1/organization_connect.ts"
+    },
+    "./gen/tools/v1/empty_pb": {
+      "types": "./src/gen/tools/v1/empty_pb.ts",
+      "default": "./src/gen/tools/v1/empty_pb.ts"
+    },
+    "./gen/tools/v1/pagination_pb": {
+      "types": "./src/gen/tools/v1/pagination_pb.ts",
+      "default": "./src/gen/tools/v1/pagination_pb.ts"
+    },
+    "./gen/*": {
+      "types": "./src/gen/*",
+      "default": "./src/gen/*"
+    }
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.11.0"
+  }
+}

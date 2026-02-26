@@ -12,6 +12,10 @@
     "check-types": "npm run check"
   },
   "dependencies": {
+    "@bufbuild/protobuf": "^2.11.0",
+    "@connectrpc/connect": "^2.1.1",
+    "@connectrpc/connect-web": "^2.1.1",
+    "@oxtro-ui/proto": "workspace:*",
     "@oxtro-ui/shadcn": "workspace:*",
     "@sveltejs/adapter-auto": "^7.0.1",
     "@sveltejs/kit": "^2.53.2",

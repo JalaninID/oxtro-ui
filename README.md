@@ -2,6 +2,35 @@
 
 This Turborepo starter is maintained by the Turborepo core team.
 
+## ConnectRPC setup for `apps/web`
+
+Generate protobuf message types and Connect clients from `../oxtro-proto` into shared package `@oxtro-ui/proto`:
+
+```sh
+bun run proto:gen
+```
+
+Consume in any app:
+
+```ts
+import { Organization } from "@oxtro-ui/proto/gen/organization/v1/organization_pb";
+import type { ResponseOrganization } from "@oxtro-ui/proto/gen/organization/v1/organization_pb";
+```
+
+Set API base URL for browser client:
+
+```sh
+# oxtro-ui/apps/web/.env.local
+PUBLIC_API_BASE_URL=http://localhost:8080
+```
+
+Verify integration:
+
+```sh
+bun run check --filter=web
+bun run check-types --filter=web
+```
+
 ## Using this example
 
 Run the following command:

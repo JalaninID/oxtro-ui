@@ -50,6 +50,7 @@
 	<div class="flex gap-2">
 		<a class="rounded-md border px-3 py-2 text-sm" href="/sessions">Manage Sessions</a>
 		<a class="rounded-md border px-3 py-2 text-sm" href="/change-password">Change Password</a>
+		<a class="rounded-md border px-3 py-2 text-sm" href="/app/plugins/crm/contacts">Open CRM Plugin UI</a>
 		<Button variant="outline" onclick={handleLogout}>Logout</Button>
 	</div>
 

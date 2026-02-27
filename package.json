@@ -8,7 +8,7 @@
     "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "proto:gen": "buf generate ../oxtro-proto --template buf.gen.yaml && bun run --cwd packages/proto generate:index"
+    "proto:gen": "buf generate .. --template buf.gen.yaml && bun run --cwd packages/proto generate:index"
   },
   "devDependencies": {
     "@bufbuild/buf": "^1.66.0",

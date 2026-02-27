@@ -28,6 +28,22 @@
       "types": "./src/gen/organization/v1/organization_connect.ts",
       "default": "./src/gen/organization/v1/organization_connect.ts"
     },
+    "./gen/plugin/v1/plugin_pb": {
+      "types": "./src/gen/plugin/v1/plugin_pb.ts",
+      "default": "./src/gen/plugin/v1/plugin_pb.ts"
+    },
+    "./gen/plugin/v1/plugin_connect": {
+      "types": "./src/gen/plugin/v1/plugin_connect.ts",
+      "default": "./src/gen/plugin/v1/plugin_connect.ts"
+    },
+    "./gen/sample_crm/v1/crm_pb": {
+      "types": "./src/gen/sample_crm/v1/crm_pb.ts",
+      "default": "./src/gen/sample_crm/v1/crm_pb.ts"
+    },
+    "./gen/sample_crm/v1/crm_connect": {
+      "types": "./src/gen/sample_crm/v1/crm_connect.ts",
+      "default": "./src/gen/sample_crm/v1/crm_connect.ts"
+    },
     "./gen/tools/v1/empty_pb": {
       "types": "./src/gen/tools/v1/empty_pb.ts",
       "default": "./src/gen/tools/v1/empty_pb.ts"

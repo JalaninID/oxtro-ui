@@ -10,7 +10,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tools/v1/empty.proto.
  */
 export const file_tools_v1_empty: GenFile = /*@__PURE__*/
-  fileDesc("ChR0b29scy92MS9lbXB0eS5wcm90bxIIdG9vbHMudjEiBwoFRW1wdHliBnByb3RvMw");
+  fileDesc("ChR0b29scy92MS9lbXB0eS5wcm90bxIIdG9vbHMudjEiBwoFRW1wdHlCGloYYXBwL2dlbi90b29scy92MTt0b29sc3YxYgZwcm90bzM");
 
 /**
  * @generated from message tools.v1.Empty

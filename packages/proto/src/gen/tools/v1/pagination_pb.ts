@@ -10,7 +10,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file tools/v1/pagination.proto.
  */
 export const file_tools_v1_pagination: GenFile = /*@__PURE__*/
-  fileDesc("Chl0b29scy92MS9wYWdpbmF0aW9uLnByb3RvEgh0b29scy52MSJPCgpQYWdpbmF0aW9uEgwKBHBhZ2UYASABKAUSEAoIcGVyX3BhZ2UYAiABKAUSDQoFdG90YWwYAyABKAUSEgoKdG90YWxfcGFnZRgEIAEoBWIGcHJvdG8z");
+  fileDesc("Chl0b29scy92MS9wYWdpbmF0aW9uLnByb3RvEgh0b29scy52MSJPCgpQYWdpbmF0aW9uEgwKBHBhZ2UYASABKAUSEAoIcGVyX3BhZ2UYAiABKAUSDQoFdG90YWwYAyABKAUSEgoKdG90YWxfcGFnZRgEIAEoBUIaWhhhcHAvZ2VuL3Rvb2xzL3YxO3Rvb2xzdjFiBnByb3RvMw");
 
 /**
  * @generated from message tools.v1.Pagination

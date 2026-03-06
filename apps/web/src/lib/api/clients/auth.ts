@@ -1,5 +1,5 @@
 import { createClient, type Client, type Transport } from "@connectrpc/connect";
-import { Auth } from "@oxtro-ui/proto/gen/auth/v1/auth_pb";
+import { Auth } from "@oxtro-ui/proto/gen/auth/v1/auth_pb.js";
 import { authInterceptor } from "$lib/auth/interceptor";
 import { createApiTransport } from "../transport";
 

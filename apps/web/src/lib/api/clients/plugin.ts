@@ -1,5 +1,5 @@
 import { createClient, type Client, type Transport } from "@connectrpc/connect";
-import { PluginManager } from "@oxtro-ui/proto/gen/plugin/v1/plugin_pb";
+import { PluginManager } from "@oxtro-ui/proto/gen/plugin/v1/plugin_pb.js";
 import { authInterceptor } from "$lib/auth/interceptor";
 import { createApiTransport } from "../transport";
 

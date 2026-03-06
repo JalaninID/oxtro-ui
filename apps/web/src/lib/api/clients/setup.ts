@@ -1,5 +1,5 @@
 import { createClient, type Client, type Transport } from "@connectrpc/connect";
-import { Setup } from "@oxtro-ui/proto/gen/setup/v1/setup_pb";
+import { Setup } from "@oxtro-ui/proto/gen/setup/v1/setup_pb.js";
 import { createApiTransport } from "../transport";
 
 export type SetupClient = Client<typeof Setup>;

@@ -1,6 +1,6 @@
 import { createClient, type Client, type Transport } from "@connectrpc/connect";
 import { createConnectTransport } from "@connectrpc/connect-web";
-import { CRM } from "@oxtro-ui/proto/gen/sample_crm/v1/crm_pb";
+import { CRM } from "@oxtro-ui/proto/gen/sample_crm/v1/crm_pb.js";
 import { PUBLIC_API_BASE_URL } from "$env/static/public";
 import { authInterceptor } from "$lib/auth/interceptor";
 

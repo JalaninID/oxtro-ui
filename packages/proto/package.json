@@ -10,47 +10,8 @@
   "exports": {
     ".": {
       "types": "./src/index.ts",
+      "svelte": "./src/index.ts",
       "default": "./src/index.ts"
-    },
-    "./gen/auth/v1/auth_pb": {
-      "types": "./src/gen/auth/v1/auth_pb.ts",
-      "default": "./src/gen/auth/v1/auth_pb.ts"
-    },
-    "./gen/auth/v1/auth_connect": {
-      "types": "./src/gen/auth/v1/auth_connect.ts",
-      "default": "./src/gen/auth/v1/auth_connect.ts"
-    },
-    "./gen/plugin/v1/plugin_pb": {
-      "types": "./src/gen/plugin/v1/plugin_pb.ts",
-      "default": "./src/gen/plugin/v1/plugin_pb.ts"
-    },
-    "./gen/plugin/v1/plugin_connect": {
-      "types": "./src/gen/plugin/v1/plugin_connect.ts",
-      "default": "./src/gen/plugin/v1/plugin_connect.ts"
-    },
-    "./gen/sample_crm/v1/crm_pb": {
-      "types": "./src/gen/sample_crm/v1/crm_pb.ts",
-      "default": "./src/gen/sample_crm/v1/crm_pb.ts"
-    },
-    "./gen/sample_crm/v1/crm_connect": {
-      "types": "./src/gen/sample_crm/v1/crm_connect.ts",
-      "default": "./src/gen/sample_crm/v1/crm_connect.ts"
-    },
-    "./gen/setup/v1/setup_pb": {
-      "types": "./src/gen/setup/v1/setup_pb.ts",
-      "default": "./src/gen/setup/v1/setup_pb.ts"
-    },
-    "./gen/setup/v1/setup_connect": {
-      "types": "./src/gen/setup/v1/setup_connect.ts",
-      "default": "./src/gen/setup/v1/setup_connect.ts"
-    },
-    "./gen/tools/v1/empty_pb": {
-      "types": "./src/gen/tools/v1/empty_pb.ts",
-      "default": "./src/gen/tools/v1/empty_pb.ts"
-    },
-    "./gen/tools/v1/pagination_pb": {
-      "types": "./src/gen/tools/v1/pagination_pb.ts",
-      "default": "./src/gen/tools/v1/pagination_pb.ts"
     },
     "./gen/*": {
       "types": "./src/gen/*",

@@ -5,11 +5,12 @@ import { loadAuthSession } from "$lib/auth/session";
 
 const PUBLIC_ROUTES = new Set([
 	"/setup",
-	"/login",
-	"/register",
-	"/forgot-password",
-	"/reset-password",
-	"/verify-email"
+	"/auth",
+	"/auth/login",
+	"/auth/register",
+	"/auth/forgot-password",
+	"/auth/reset-password",
+	"/auth/verify-email"
 ]);
 
 export const ssr = false;
@@ -30,13 +31,13 @@ export async function load({ url }: { url: URL }) {
 		throw redirect(307, "/setup");
 	}
 	if (setupCompleted && url.pathname === "/setup") {
-		throw redirect(307, "/login");
+		throw redirect(307, "/auth/login");
 	}
 
 	const session = loadAuthSession();
 	const isPublic = PUBLIC_ROUTES.has(url.pathname);
 	if (!session.accessToken && !isPublic) {
-		throw redirect(307, "/login");
+		throw redirect(307, "/auth/login");
 	}
 	if (session.accessToken && isPublic) {
 		throw redirect(307, "/");

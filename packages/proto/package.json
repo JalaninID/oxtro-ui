@@ -20,14 +20,6 @@
       "types": "./src/gen/auth/v1/auth_connect.ts",
       "default": "./src/gen/auth/v1/auth_connect.ts"
     },
-    "./gen/organization/v1/organization_pb": {
-      "types": "./src/gen/organization/v1/organization_pb.ts",
-      "default": "./src/gen/organization/v1/organization_pb.ts"
-    },
-    "./gen/organization/v1/organization_connect": {
-      "types": "./src/gen/organization/v1/organization_connect.ts",
-      "default": "./src/gen/organization/v1/organization_connect.ts"
-    },
     "./gen/plugin/v1/plugin_pb": {
       "types": "./src/gen/plugin/v1/plugin_pb.ts",
       "default": "./src/gen/plugin/v1/plugin_pb.ts"
@@ -43,6 +35,14 @@
     "./gen/sample_crm/v1/crm_connect": {
       "types": "./src/gen/sample_crm/v1/crm_connect.ts",
       "default": "./src/gen/sample_crm/v1/crm_connect.ts"
+    },
+    "./gen/setup/v1/setup_pb": {
+      "types": "./src/gen/setup/v1/setup_pb.ts",
+      "default": "./src/gen/setup/v1/setup_pb.ts"
+    },
+    "./gen/setup/v1/setup_connect": {
+      "types": "./src/gen/setup/v1/setup_connect.ts",
+      "default": "./src/gen/setup/v1/setup_connect.ts"
     },
     "./gen/tools/v1/empty_pb": {
       "types": "./src/gen/tools/v1/empty_pb.ts",
